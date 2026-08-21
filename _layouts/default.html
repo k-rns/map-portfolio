@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="{{ '/' | relative_url }}" class="site-name">
+        KAREN SOENEN
+      </a>
+
+      <nav class="site-nav">
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+        <a href="https://github.com/k-rns/map-portfolio" target="_blank">
+          GITHUB
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2026 Karen Soenen. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
