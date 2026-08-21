@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {{ page.title }} | {{ site.title }}
+  </title>
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a href="{{ '/' | relative_url }}" class="site-name">
+        KAREN SOENEN
+      </a>
+
+      <nav class="site-nav">
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+
+        <a
+          href="https://github.com/k-rns/map-portfolio"
+          target="_blank">
+          GITHUB
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main class="container map-page">
+
+    <div class="map-page-header">
+
+      <div class="map-page-day">
+        DAY {{ page.day }}
+      </div>
+
+      <h1>
+        {{ page.title }}
+      </h1>
+
+    </div>
+
+
+    <div class="map-page-image">
+
+      <img
+        src="{{ page.image | relative_url }}"
+        alt="{{ page.title }}">
+
+    </div>
+
+
+    <div class="map-page-info">
+
+      {% if page.challenge %}
+      <section>
+
+        <h2>Challenge</h2>
+
+        <p>
+          {{ page.challenge }}
+        </p>
+
+      </section>
+      {% endif %}
+
+
+      {% if page.data %}
+      <section>
+
+        <h2>Data</h2>
+
+        <p>
+          {{ page.data }}
+        </p>
+
+      </section>
+      {% endif %}
+
+
+      {% if page.methods %}
+      <section>
+
+        <h2>How it was made</h2>
+
+        <p>
+          {{ page.methods }}
+        </p>
+
+      </section>
+      {% endif %}
+
+
+      {% if page.tools %}
+      <section>
+
+        <h2>Tools</h2>
+
+        <p>
+          {{ page.tools }}
+        </p>
+
+      </section>
+      {% endif %}
+
+    </div>
+
+
+    <div class="map-page-content">
+
+      {{ content }}
+
+    </div>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      © 2026 Karen Soenen. All rights reserved.
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
