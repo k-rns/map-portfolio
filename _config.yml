@@ -2,3 +2,7 @@ title: "30 Day Map Challenge"
 description: "A cartographic portfolio by Karen Soenen"
 baseurl: "/map-portfolio"
 url: "https://k-rns.github.io"
+collections:
+  maps:
+    output: true
+    permalink: /maps/:name/
