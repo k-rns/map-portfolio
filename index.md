@@ -20,7 +20,7 @@ title: 30 Day Map Challenge
   {% comment %} If no file has this day yet, "match" will be empty {% endcomment %}
   {% assign match = site.maps | where: "day", i | first %}
 
-  {% if match %}
+  {% if match and match.published != false %}
     {% comment %} A map file exists for this day -> show a real, clickable thumbnail {% endcomment %}
     <a href="{{ match.url | relative_url }}" class="map-card">
       <img src="{{ match.image | relative_url }}" alt="{{ match.title }}" class="map-card-image">
