@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Data Resources
+permalink: /resources/
 ---
 <section class="page-intro">
   <h1>DATA RESOURCES</h1>
@@ -9,7 +10,7 @@ title: Data Resources
   </p>
 </section>
 
-<div class="map-page-content" style="border-top: none; margin-top: 0; padding-top: 0;">
+<div class="map-page-content" markdown="1" style="border-top: none; margin-top: 0; padding-top: 0;">
 
 ## Boundaries & Basemaps
 - [Natural Earth](https://www.naturalearthdata.com/) — free vector and raster map data
