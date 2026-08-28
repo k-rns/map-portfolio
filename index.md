@@ -14,4 +14,24 @@ title: 30 Day Map Challenge
     <div class="map-card-day">Day 01</div>
     <div class="map-card-title">{{ site.maps[0].title }}</div>
   </a>
+
+  <div class="map-card map-card-placeholder">
+    <div class="map-card-image"></div>
+    <div class="map-card-day">Day 02</div>
+  </div>
+
+  <div class="map-card map-card-placeholder">
+    <div class="map-card-image"></div>
+    <div class="map-card-day">Day 03</div>
+  </div>
+
+  <div class="map-card map-card-placeholder">
+    <div class="map-card-image"></div>
+    <div class="map-card-day">Day 04</div>
+  </div>
+
+  <div class="map-card map-card-placeholder">
+    <div class="map-card-image"></div>
+    <div class="map-card-day">Day 05</div>
+  </div>
 </div>
