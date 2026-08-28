@@ -130,6 +130,14 @@ a {
   font-weight: 600;
 }
 
+.map-card-placeholder {
+  cursor: default;
+}
+
+.map-card-placeholder:hover .map-card-image {
+  transform: none;
+}
+
 /* =========================
    Individual map pages
    ========================= */
