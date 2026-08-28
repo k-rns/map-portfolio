@@ -5,7 +5,7 @@ title: 30 Day Map Challenge
 <section class="page-intro">
   <h1>30 DAY MAP CHALLENGE</h1>
   <p>
-    30 maps exploring data through cartography.
+    Each day of this challenge turns open data (geographic, environmental, statistical) into a map that makes patterns easier to see and act on. A map turns raw data into real information: something you can read, compare, and act on, especially once it combines several sources at once. That's what I'm after here: using GIS to find connections a single dataset can't show by itself.
   </p>
 </section>
 
