@@ -8,30 +8,32 @@ title: 30 Day Map Challenge
     30 maps exploring data through cartography.
   </p>
 </section>
+
 <div class="map-grid">
-  <a href="{{ site.maps[0].url | relative_url }}" class="map-card">
-    <img src="{{ site.maps[0].image | relative_url }}" alt="{{ site.maps[0].title }}" class="map-card-image">
-    <div class="map-card-day">Day 01</div>
-    <div class="map-card-title">{{ site.maps[0].title }}</div>
-  </a>
+{% comment %} Loop through day numbers 1 to 30, one card per day {% endcomment %}
+{% for i in (1..30) %}
 
-  <div class="map-card map-card-placeholder">
-    <div class="map-card-image"></div>
-    <div class="map-card-day">Day 02</div>
-  </div>
+  {% comment %} Turn the number into a 2-digit string: 1 -> "01", 23 -> "23" {% endcomment %}
+  {% assign day_str = i | prepend: "00" | slice: -2, 2 %}
 
-  <div class="map-card map-card-placeholder">
-    <div class="map-card-image"></div>
-    <div class="map-card-day">Day 03</div>
-  </div>
+  {% comment %} Look through _maps/ for a file whose front-matter "day:" matches this loop number {% endcomment %}
+  {% comment %} If no file has this day yet, "match" will be empty {% endcomment %}
+  {% assign match = site.maps | where: "day", i | first %}
 
-  <div class="map-card map-card-placeholder">
-    <div class="map-card-image"></div>
-    <div class="map-card-day">Day 04</div>
-  </div>
+  {% if match %}
+    {% comment %} A map file exists for this day -> show a real, clickable thumbnail {% endcomment %}
+    <a href="{{ match.url | relative_url }}" class="map-card">
+      <img src="{{ match.image | relative_url }}" alt="{{ match.title }}" class="map-card-image">
+      <div class="map-card-day">Day {{ day_str }}</div>
+      <div class="map-card-title">{{ match.title }}</div>
+    </a>
+  {% else %}
+    {% comment %} No map file yet for this day -> show an empty grey placeholder box {% endcomment %}
+    <div class="map-card map-card-placeholder">
+      <div class="map-card-image"></div>
+      <div class="map-card-day">Day {{ day_str }}</div>
+    </div>
+  {% endif %}
 
-  <div class="map-card map-card-placeholder">
-    <div class="map-card-image"></div>
-    <div class="map-card-day">Day 05</div>
-  </div>
+{% endfor %}
 </div>
