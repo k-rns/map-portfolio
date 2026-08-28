@@ -130,6 +130,87 @@ a {
   font-weight: 600;
 }
 
+/* =========================
+   Individual map pages
+   ========================= */
+
+.map-page {
+  padding-bottom: 40px;
+}
+
+.map-page-header {
+  padding: 65px 0 35px;
+}
+
+.map-page-day {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.map-page-header h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.map-page-image {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.map-page-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-page-info {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px 70px;
+  padding: 10px 0 20px;
+}
+
+.map-page-info section h2 {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.map-page-info section p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.map-page-content {
+  max-width: 900px;
+  margin: 45px auto 0;
+  padding-top: 45px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.map-page-content h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.map-page-content p {
+  max-width: 750px;
+  color: #555;
+  line-height: 1.7;
+}
+
 
 /* =========================
    Footer
@@ -173,5 +254,23 @@ a {
 
   .map-grid {
     grid-template-columns: 1fr;
+  }
+
+  .map-page-header {
+    padding: 45px 0 30px;
+  }
+
+  .map-page-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .map-page-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .map-page-content {
+    margin-top: 30px;
+    padding-top: 30px;
   }
 }
