@@ -8,7 +8,6 @@ title: 30 Day Map Challenge
     30 maps exploring data through cartography.
   </p>
 </section>
-
 <div class="map-grid">
   <a href="{{ site.maps[0].url | relative_url }}" class="map-card">
     <img src="{{ site.maps[0].image | relative_url }}" alt="{{ site.maps[0].title }}" class="map-card-image">
