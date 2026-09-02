@@ -22,19 +22,14 @@ title: 30 Day Map Challenge
   {% assign match = site.maps | where: "day", i | first %}
 
   {% if match and match.published != false %}
-    {% comment %} A map file exists for this day -> show a real, clickable thumbnail {% endcomment %}
+    {% comment %} A map file exists for this day and is published -> show a real, clickable thumbnail {% endcomment %}
     <a href="{{ match.url | relative_url }}" class="map-card">
       <img src="{{ match.image | relative_url }}" alt="{{ match.title }}" class="map-card-image">
       <div class="map-card-day">Day {{ day_str }}</div>
       <div class="map-card-title">{{ match.title }}</div>
     </a>
-  {% else %}
-    {% comment %} No map file yet for this day -> show an empty grey placeholder box {% endcomment %}
-    <div class="map-card map-card-placeholder">
-      <div class="map-card-image"></div>
-      <div class="map-card-day">Day {{ day_str }}</div>
-    </div>
   {% endif %}
+  {% comment %} No file yet, or published: false -> render nothing for this day {% endcomment %}
 
 {% endfor %}
 </div>
