@@ -87,13 +87,20 @@ a {
   color: #666;
 }
 
-.about-tagline {
+.eyebrow {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   color: #777;
   text-transform: uppercase;
   margin-bottom: 26px;
+}
+
+.page-intro p.hero-note {
+  margin-top: 24px;
+  max-width: 550px;
+  font-size: 0.85rem;
+  color: #999;
 }
 
 
@@ -178,20 +185,38 @@ a {
   height: auto;
 }
 
-.map-page-info,
-.about-info {
+.map-page-info {
   max-width: 900px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 45px 70px;
   padding: 10px 0 20px;
 }
 
-.map-page-info {
-  margin: 0 auto;
+.map-page-info section h2 {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.map-page-info section h2,
+.map-page-info section p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-info {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 10px 0 20px;
+}
+
 .about-info section h2 {
   margin: 0 0 10px;
   font-size: 0.8rem;
@@ -200,11 +225,10 @@ a {
   text-transform: uppercase;
 }
 
-.map-page-info section p,
 .about-info section p {
   margin: 0;
-  color: #555;
-  font-size: 1rem;
+  color: #666;
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -282,8 +306,7 @@ a {
     font-size: 2.4rem;
   }
 
-  .map-page-info,
-  .about-info {
+  .map-page-info {
     grid-template-columns: 1fr;
     gap: 30px;
   }

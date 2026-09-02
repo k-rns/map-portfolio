@@ -3,11 +3,13 @@ layout: default
 title: 30 Day Map Challenge
 ---
 <section class="page-intro">
+  <div class="eyebrow">Data In, Maps Out</div>
+
   <h1>30 DAY MAP CHALLENGE</h1>
-  <p>Each day of this challenge turns open data (geographic, environmental, statistical) into a map that makes patterns easier to see and act on. </p>
-  <p>A map turns raw data into real information: something you can read, compare, and act on, especially once it combines several sources at once. </p>
-  <p>That's what I'm after here: using GIS to find connections a single dataset can't show by itself.</p>
-  <p>This is my contribution to the 2026 <a href="https://30daymapchallenge.com/" target="_blank">#30DayMapChallenge</a>, an open, non-competitive event held every November where mappers worldwide create one themed map a day.</p>
+
+  <p>A map turns raw data into real information: something you can read, compare, and act on, especially once it combines several sources at once. That's what I'm after here, using GIS to find connections a single dataset can't show by itself.</p>
+
+  <p class="hero-note">This is my contribution to the 2026 <a href="https://30daymapchallenge.com/" target="_blank">#30DayMapChallenge</a>, an open, non-competitive event held every November where mappers worldwide create one themed map a day.</p>
 </section>
 
 <div class="map-grid">

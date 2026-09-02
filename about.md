@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="page-intro">
 
-  <div class="about-tagline">Maps | Data | Action</div>
+  <div class="eyebrow">Maps | Data | Action</div>
 
   <h1>ABOUT</h1>
 
