@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="page-intro">
 
-  <div class="map-page-day">Maps | Data | Action</div>
+  <div class="about-tagline">Maps | Data | Action</div>
 
   <h1>ABOUT</h1>
 
@@ -16,7 +16,7 @@ permalink: /about/
 
 </div>
 
-<div class="map-page-info">
+<div class="about-info">
   <section>
     <h2>Background</h2>
     <p>

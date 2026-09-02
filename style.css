@@ -87,6 +87,15 @@ a {
   color: #666;
 }
 
+.about-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
 
 /* =========================
    Map grid
@@ -169,16 +178,21 @@ a {
   height: auto;
 }
 
-.map-page-info {
+.map-page-info,
+.about-info {
   max-width: 900px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 45px 70px;
   padding: 10px 0 20px;
 }
 
-.map-page-info section h2 {
+.map-page-info {
+  margin: 0 auto;
+}
+
+.map-page-info section h2,
+.about-info section h2 {
   margin: 0 0 10px;
   font-size: 0.8rem;
   font-weight: 700;
@@ -186,7 +200,8 @@ a {
   text-transform: uppercase;
 }
 
-.map-page-info section p {
+.map-page-info section p,
+.about-info section p {
   margin: 0;
   color: #555;
   font-size: 1rem;
@@ -267,7 +282,8 @@ a {
     font-size: 2.4rem;
   }
 
-  .map-page-info {
+  .map-page-info,
+  .about-info {
     grid-template-columns: 1fr;
     gap: 30px;
   }
